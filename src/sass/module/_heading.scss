@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.heading {
+  position: relative;
+  font-size: rem(36);
+  font-weight: $medium;
+  padding-bottom: rem(17);
+  letter-spacing: 0.05em;
+  color: $green;
+}
+
+.heading::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: rem(34);
+  height: rem(4);
+  border-radius: rem(2);
+  background-color: $green;
+}
+
+// 動画16:00〜
