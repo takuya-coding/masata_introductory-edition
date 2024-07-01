@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: rem(74);
+  background-color: $beige;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding: 0 rem(120);
+  // 高さ継承
+  height: inherit;
+}
+
+.header__name {
+  font-size: rem(26);
+  font-weight: $medium;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  color: $green;
+  // 高さ継承
+  height: inherit;
+}
+
+.header__nav {
+  // 高さ継承
+  height: inherit;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+  // 高さ継承
+  height: inherit;
+}
+
+.header__item:not(:first-child) {
+  margin-left: rem(66);
+}
+
+.header__item {
+  // 高さ継承
+  height: inherit;
+}
+
+// 隣接セレクタ使う書き方でも可
+// .header__item+ .header__item {
+//     margin-left: rem(66);
+// }
+
+.header__link {
+  font-size: rem(16);
+  font-weight: $medium;
+  letter-spacing: 0.05em;
+  color: $green;
+  display: flex;
+  align-items: center;
+  // 高さ継承
+  height: inherit;
+}
+
+.header__contact {
+    margin-left: rem(66);
+}
